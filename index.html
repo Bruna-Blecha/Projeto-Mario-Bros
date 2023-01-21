@@ -27,14 +27,15 @@
 
         </video>
     </div>
+    
     <header class="cabecalho">
         <a href="">
             <img class="logo" src="./src/imagens/logo-chapeu-mario.png" alt="Logo chapéu Mario">
         </a>
         <nav>
             <ul class="menu">
-                <li>Home</li>
-                <li>Detalhes</li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Detalhes</a></li>
 
             </ul>
         </nav>
@@ -43,12 +44,17 @@
     <main class="container">
         <div class="informacoes">
             <img class="imagem-titulo" src="./src/imagens/titulo.png" alt="Imagem do título do filme">
-            <p class="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum voluptatem perspiciatis
-                earum aperiam repellendus, laborum quia cupiditate delectus enim eum veritatis praesentium accusamus id
-                omnis dolorem ea provident est iste!</p>
-            <button class="botao">Veja o trailer</button>
+            <p class="descricao">Mario é um encanador junto com seu irmão Luigi. Um dia, eles vão parar no reino dos cogumelos, governado pela Princesa Peach, mas ameaçado pelo rei dos Koopas, que faz de tudo para conseguir reinar em todos os lugares.</p>
+            <button class="botao-trailer">Veja o trailer</button>
         </div>
         <img class="mario" src="./src/imagens/super-mario-chars.png" alt="">
+
+        <div class="modal">
+            <div class="conteudo-modal">
+                <span class="fechar-modal">X</span>
+                <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/Cb4WV4aXBpk" title="Trailer Oficial" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
     </main>
 </body>
 
