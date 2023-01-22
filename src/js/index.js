@@ -1,17 +1,18 @@
-/*  
+const botaoTrailer = document.querySelector(".botao-trailer");
+const modal = document.querySelector(".modal");
+const video = document.getElementById("video");
+const linkDoVideo = video.src;
 
-OBJETIVO 1 - Quando o usuário clicar no botão 'Veja o trailer', devemos abrir a modal com o video do trailer
-    - passo 1 - Atrelar o elemento que representa o botão com o js
-    - passo 2 - Identificar quando o usuário clicar no botão
-    - passo 3 - Pegar o elemento da modal no js
-    - passo 4 - Abrir a modal na tela
+botaoTrailer.addEventListener("click", () => {
+    modal.classList.add("aberto");
+    video.setAttribute("src", linkDoVideo)
+});
 
-OBJETIVO 2 - Quando o usuário clicar no botão 'X', devemos fechar a modal 
-    - passo 1 - Pegar o elemento fechar modal usando jd
-    - passo 2 - Identificar quando o usuário clicar no X
-    - passo 3 - Fechar a modal
-*/
+const botaoFecharModal = document.querySelector(".fechar-modal");
 
-console.log('Mostrar o document', document);
+botaoFecharModal.addEventListener("click", () => {
+    modal.classList.remove("aberto");
+    video.setAttribute("src", "")
+});
 
-console.log(document.querySelector(".botao-trailer"));
+
