@@ -12,6 +12,6 @@ OBJETIVO 2 - Quando o usuário clicar no botão 'X', devemos fechar a modal
     - passo 3 - Fechar a modal
 */
 
-console.log('Mostrar o document'document);
+console.log('Mostrar o document', document);
 
 console.log(document.querySelector(".botao-trailer"));
